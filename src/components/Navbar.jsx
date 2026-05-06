@@ -61,7 +61,7 @@ export default function Navbar(){
 
   return (
     <>
-      <motion.header ref={navRef} className="cinema-navbar" initial={{ y: -120, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.9, ease: 'easeOut', delay: 0.2 }}>
+      <motion.header ref={navRef} className="cinema-navbar" initial={{ y: 0, opacity: 1 }} animate={{ y: 0, opacity: 1 }}>
         <div className="cinema-navbar-shell" style={{ height: isScrolled ? '72px' : '92px' }}>
           <motion.button className="cinema-logo" onClick={() => scrollTo('hero')} whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.98 }}>
             <div className="cinema-logo-icon">◆</div>
@@ -85,12 +85,6 @@ export default function Navbar(){
                 </motion.button>
               ))}
             </nav>
-          )}
-
-          {!isSmallScreen && (
-            <motion.button className="cinema-cta" onClick={() => scrollTo('cta')} whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-              Book A Meeting
-            </motion.button>
           )}
 
           {isSmallScreen && (
