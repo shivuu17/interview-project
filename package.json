@@ -1,0 +1,22 @@
+{
+  "name": "mall-sales-deck",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^9.0.0",
+    "gsap": "^3.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^12.1.4",
+    "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^8.0.10"
+  }
+}
